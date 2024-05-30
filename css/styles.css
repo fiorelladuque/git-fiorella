@@ -1,164 +1,136 @@
-
-/* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+/* linea de comentario en css y scss*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* bg */
-.fondo-bg{
-    background-color: rgb(210, 210, 207);
+body {
+  background-color: rgb(210, 210, 207);
 }
 
-.a-hover:hover{
-    background-color: rgb(126, 126, 108);
-    color: white;
+.fondo-bg {
+  background-color: rgb(210, 210, 207);
 }
 
-/* estilos generales */
-
-body{
-    background-color: rgb(210, 210, 207);
-}
-
-header{
-   margin: 0px 15px;
-   padding: 10x 30x;
-   background-color: white;
-
-   /* flex */
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
-   box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
-   font-family: Arial, Helvetica, sans-serif;
-
-}
-
-header nav ul{
-    display: flex;
-    gap: 10px;
-    margin-right: 5px;
-}
-
-header img{
-    width: 10%;
-    margin-left: 15px;
-}
-
-header nav ul li{
-    color: olive;
-    list-style: none;
-}
-
-/* estilos de main */ 
-main{
-    margin: 0px 15px;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    
-}
-
-main main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 23%) ;
-    row-gap: 15px;
-}
-
-main h1{
-    color: darkolivegreen;
-    text-align: center;
-}
-
-main p{
-    color: dimgray;
-    margin-top: 20px;
-    text-align: center;
-}
-
-main p span{
-    font-weight: bold;
-    color:olive;
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-main div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main img{
-    width: 40%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    
-}
-
-section{
-    margin: 0px 15px;
-    padding: 5px;
-    background-color: white;
-    color: dimgray;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10px;
-    flex-wrap: wrap; 
-    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-
-section div{
-    text-align: start;
-    margin: 10px;
-    justify-content: space-between;
-}
-
-/* estilo footer */
-footer{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-
+.a-hover:hover {
+  background-color: rgb(126, 126, 108);
+  color: white;
 }
 
 /* mq tablet */
-
 @media screen and (min-width: 768px) {
-    main main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 48%);
-        gap: 10px;
-    }
+  main main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 48%);
+    gap: 10px;
+  }
 }
-
 /* mq desktop */
-@media screen and (min-width:1280px){
-   header img{
+@media screen and (min-width: 1280px) {
+  header img {
     width: 8%;
-   }
-
-   main main{
+  }
+  main main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 90%);
-   }
+  }
+}
+/* mq celular */
+@media screen and (min-width: 390px) {
+  header {
+    margin: 5px;
+  }
+}
+header {
+  background-color: white;
+  margin: 0px 15px;
+  padding: 10x 30x;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul {
+  display: flex;
+  gap: 10px;
+  margin-right: 5px;
+}
+header nav ul li {
+  color: olive;
+  list-style: none;
+}
+header img {
+  width: 10%;
+  margin-left: 15px;
 }
 
-/* mq celular */
-@media screen and (min-width:390px){
-    header{
-        margin:5px
-    }
+main {
+  margin: 0px 15px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
+main main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 23%);
+  row-gap: 15px;
+}
+main h1 {
+  color: darkolivegreen;
+  text-align: center;
+}
+main p {
+  color: dimgray;
+  margin-top: 20px;
+  text-align: center;
+}
+main p span {
+  font-weight: bold;
+  color: olive;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main img {
+  width: 40%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+section {
+  margin: 0px 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: white;
+  color: dimgray;
+  box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+section div {
+  text-align: start;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+/*# sourceMappingURL=styles.css.map */

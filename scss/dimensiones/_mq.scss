@@ -1,0 +1,28 @@
+/* mq tablet */
+
+@media screen and (min-width: 768px) {
+    main main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 48%);
+        gap: 10px;
+    }
+}
+
+/* mq desktop */
+@media screen and (min-width:1280px){
+   header img{
+    width: 8%;
+   }
+
+   main main{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 90%);
+   }
+}
+
+/* mq celular */
+@media screen and (min-width:390px){
+    header{
+        margin:5px
+    }
+}
